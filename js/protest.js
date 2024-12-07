@@ -28,7 +28,14 @@ document.getElementById('btn-donate3')
 .addEventListener('click',function(){
     modal.close();
 })
+
+const div = document.createElement('div');
+   div.innerHTML = `
+   ${inputMoney3} Taka is Donated  for Injured in the Quota Movement, Bangladesh
+   `
+   document.getElementById('history-section').append(div);
   
+
 //clear the input field
    document.getElementById('input3').value = '';
 })

@@ -19,7 +19,7 @@ document.getElementById('btn-donate2')
    const newCollected2 = collect2 + inputMoney2;
    document.getElementById('collection2').innerText = newCollected2;
 
-  
+   document.getElementById('modalCash').innerText = inputMoney2;
    const modal = document.getElementById('dialog');
    modal.showModal();
 
@@ -27,6 +27,12 @@ document.getElementById('btn-donate2')
    .addEventListener('click',function(){
        modal.close();
    })
+  
+   const div = document.createElement('div');
+   div.innerHTML = `
+   ${inputMoney2} Taka is Donated for Flood at Feni, Bangladesh
+   `
+   document.getElementById('history-section').append(div);
   
 //clear the input field
    document.getElementById('input2').value = '';
