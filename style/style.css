@@ -13,3 +13,6 @@ button {
 button:focus {
   transform: scale(0.95);
 }
+#modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
